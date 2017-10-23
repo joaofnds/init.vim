@@ -49,7 +49,7 @@ let base16colorspace=256
 nnoremap ,c :exe ':silent !chromium-browser %'<CR>
 
 " Enable syntax highlight
-syntax enable
+syntax on
 
 " Map control-n to toggle nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -93,7 +93,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'chriskempson/base16-vim'
+Plug 'dracula/vim'
 
 call plug#end()
 
@@ -109,7 +109,7 @@ let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
 call deoplete#custom#set('_', 'matchers', ['matcher_full_fuzzy'])
 
 " Set colorscheme
-colorscheme base16-onedark
+color dracula
 
 " CtrlP ignore
 let g:ctrlp_custom_ignore = {
